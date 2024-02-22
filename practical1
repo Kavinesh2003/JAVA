@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class datatype {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+     
+        byte byteNumber;
+        short shortNumber;
+        int intNumber;
+        long longNumber;
+
+        System.out.println("Enter a byte number:");
+        byteNumber = scanner.nextByte();
+        System.out.println("Byte Number: " + byteNumber);
+
+        System.out.println("Enter a short number:");
+        shortNumber = scanner.nextShort();
+        System.out.println("Short Number: " + shortNumber);
+
+        System.out.println("Enter an integer number:");
+        intNumber = scanner.nextInt();
+        System.out.println("Integer Number: " + intNumber);
+
+        System.out.println("Enter a long number:");
+        longNumber = scanner.nextLong();
+        System.out.println("Long Number: " + longNumber);
+
+        float floatNumber;
+        double doubleNumber;
+
+        System.out.println("Enter a float number:");
+        floatNumber = scanner.nextFloat();
+        System.out.println("Float Number: " + floatNumber);
+
+        System.out.println("Enter a double number:");
+        doubleNumber = scanner.nextDouble();
+        System.out.println("Double Number: " + doubleNumber);
+
+        char charValue;
+
+        System.out.println("Enter a character:");
+        charValue = scanner.next().charAt(0);
+        System.out.println("Character: " + charValue);
+
+      
+        boolean boolValue;
+
+        System.out.println("Enter a boolean value (true/false):");
+        boolValue = scanner.nextBoolean();
+        System.out.println("Boolean Value: " + boolValue);
+
+        scanner.close();
+    }
+}
