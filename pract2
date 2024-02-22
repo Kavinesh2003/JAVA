@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class conversationq {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        byte byteValue = 10;
+        short shortValue = byteValue;
+        int intValue = shortValue;
+        long longValue = intValue;
+        float floatValue = longValue;
+        double doubleValue = floatValue;
+
+        System.out.println("Implicit Conversion (Widening):");
+        System.out.println("byteValue: " + byteValue);
+        System.out.println("shortValue: " + shortValue);
+        System.out.println("intValue: " + intValue);
+        System.out.println("longValue: " + longValue);
+        System.out.println("floatValue: " + floatValue);
+        System.out.println("doubleValue: " + doubleValue);
+
+      
+        System.out.println("\nEnter a double value for explicit conversion (Narrowing):");
+        double userInput = scanner.nextDouble();
+        floatValue = (float) userInput;
+        longValue = (long) floatValue;
+        intValue = (int) longValue;
+        shortValue = (short) intValue;
+        byteValue = (byte) shortValue;
+
+        System.out.println("\nExplicit Conversion (Narrowing):");
+        System.out.println("userInput: " + userInput);
+        System.out.println("floatValue: " + floatValue);
+        System.out.println("longValue: " + longValue);
+        System.out.println("intValue: " + intValue);
+        System.out.println("shortValue: " + shortValue);
+        System.out.println("byteValue: " + byteValue);
+
+        System.out.println("\nOverflow and Underflow Scenarios:");
+        int overflowValue = Integer.MAX_VALUE + 1;
+        int underflowValue = Integer.MIN_VALUE - 1;
+
+        System.out.println("Overflow Value: " + overflowValue);
+        System.out.println("Underflow Value: " + underflowValue);
+    }
+}
